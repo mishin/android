@@ -8,9 +8,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".StartingPoint" >
 
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDisplay"
+        android:layout_below="@+id/tvDisplay"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_title"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bSub"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bAdd"
+        android:layout_below="@+id/bAdd"
+        android:text="@string/btn_title2"
+        android:textSize="20sp" />
+
     <TextView
+        android:id="@+id/tvDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/title"
+        android:textSize="45sp" />
 
 </RelativeLayout>

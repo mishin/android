@@ -3,6 +3,10 @@
 
     <string name="app_name">The New Boston</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title">Your total is 0</string>
+    <string name="ref">this is a reference</string>
+    <string name="Type">Type</string>
+    <string name="btn_title">Add one</string>
+    <string name="btn_title2">Subtract one</string>
 
 </resources>
