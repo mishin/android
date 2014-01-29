@@ -8,5 +8,11 @@
     <string name="Type">Type</string>
     <string name="btn_title">Add one</string>
     <string name="btn_title2">Subtract one</string>
+    <string name="et_prompt">Type a Command</string>
+    <string name="tv_invalid">invalid</string>
+    <string name="b_text">Try Command</string>
+    <string name="b_ToggleButton">ToggleButton</string>
+    
+    
 
 </resources>
