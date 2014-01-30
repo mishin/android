@@ -3,7 +3,9 @@
     android:padding="25dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="#000000"
+     >
     
 <EditText 
     android:layout_width="fill_parent"
