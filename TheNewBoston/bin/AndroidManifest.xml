@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="8" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
     <application
         android:allowBackup="true"
@@ -50,6 +51,12 @@
         </activity>
          <activity
             android:name="com.thenewboston.travis.Email"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+           <activity
+            android:name="com.thenewboston.travis.Camera"
             android:label="@string/app_name" >
             
         </activity>
