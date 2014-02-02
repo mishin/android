@@ -36,9 +36,9 @@ public class Data extends Activity implements OnClickListener{
 
 
 	@Override
-	public void onClick(View arg0) {
+	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		switch(arg0.getId()){
+		switch(v.getId()){
 		case R.id.bSA:
 			String bread = sendET.getText().toString();
 			Bundle basket = new Bundle();
@@ -48,10 +48,26 @@ public class Data extends Activity implements OnClickListener{
 			startActivity(a);
 			break;
 		case R.id.bSAFR:
-//			String bread = 
+			Intent i = new Intent(Data.this, OpenedClass.class);
+			startActivityForResult(i, 0); 
 			break;
+			
+			default:
+				break;
 		}
 		
+	}
+
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		if (resultCode == RESULT_OK) {
+			Bundle basket = data.getExtras();
+			String s = basket.getString("answer");
+			gotAnswer.setText(s);
+		}
 	}
 	
 
